@@ -1,12 +1,12 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -83,12 +83,12 @@ public class MainActivity extends AppCompatActivity {
         double bulkCalories = tdee * 1.1;
         double cutCalories = tdee * 0.9;
 
-        // Display results using Toast (you can update this part based on your UI requirements)
-        String resultMessage = "Maintenance Calories: " + maintainCalories + " calories per day\n"
-                + "Bulking Calories: " + bulkCalories + " calories per day\n"
-                + "Cutting Calories: " + cutCalories + " calories per day";
-
-        showToast(resultMessage);
+        // Navigate to ResultActivity and pass the calculated values
+        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+        intent.putExtra("maintainCalories", maintainCalories);
+        intent.putExtra("bulkCalories", bulkCalories);
+        intent.putExtra("cutCalories", cutCalories);
+        startActivity(intent);
     }
 
     private char getSelectedGender() {
