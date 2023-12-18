@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile details"
+            android:textSize="56dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <!-- Age -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginBottom="16dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Age:"
+    android:textColor="@android:color/white"
+    android:layout_gravity="start"
+    android:textSize="18sp"
+android:layout_weight="1"/>
+
+<EditText
+    android:id="@+id/editTextAge"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:hint="Enter Age"
+    android:inputType="number"
+    android:textSize="18sp"
+android:background="@android:color/white"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:layout_marginLeft="150dp"
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </LinearLayout>
+    <!-- Height -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginBottom="16dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Height (cm):"
+    android:textColor="@android:color/white"
+    android:layout_gravity="start"
+    android:textSize="18sp"
+    android:layout_weight="1"/>
+
+<EditText
+    android:id="@+id/editTextHeight"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:hint="Enter Height"
+    android:inputType="numberDecimal"
+    android:textSize="18sp"
+    android:background="@android:color/white"/>
+
+</LinearLayout>
+
+    <!-- Weight -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginBottom="16dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Weight (kg):"
+    android:textColor="@android:color/white"
+    android:layout_gravity="start"
+    android:textSize="18sp"
+    android:layout_weight="1"/>
+
+<EditText
+    android:id="@+id/editTextWeight"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:hint="Enter Weight"
+    android:inputType="numberDecimal"
+    android:textSize="18sp"
+    android:background="@android:color/white"/>
+
+</LinearLayout>
+
+    <!-- Activities -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginBottom="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupActivityLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonSedentary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedentary" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLightlyActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lightly Active" />
+
+        <RadioButton
+            android:id="@+id/radioButtonModeratelyActive"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Moderately Active" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVeryActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Active" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Calculate Calories"
+        android:textColor="#4E342E"
+        android:textSize="18sp" />
+
+    </LinearLayout>
