@@ -28,13 +28,14 @@ public class MainActivity extends AppCompatActivity {
         editTextHeight = findViewById(R.id.editTextHeight);
         radioGroupGender = findViewById(R.id.radioGroupGender);
         radioGroupActivityLevel = findViewById(R.id.radioGroupActivityLevel);
-        calculateButton = findViewById(R.id.calculateButton);
+        calculateButton =(Button) findViewById(R.id.calculateButton);
 
         // Set onClickListener for the calculateButton
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 calculateCalories();
+
             }
         });
     }
@@ -83,11 +84,15 @@ public class MainActivity extends AppCompatActivity {
         double bulkCalories = tdee * 1.1;
         double cutCalories = tdee * 0.9;
 
-        // Navigate to ResultActivity and pass the calculated values
-        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-        intent.putExtra("maintainCalories", maintainCalories);
-        intent.putExtra("bulkCalories", bulkCalories);
-        intent.putExtra("cutCalories", cutCalories);
+        // Display results using Toast (you can update this part based on your UI requirements)
+        String resultMessage = "Maintenance Calories: " + maintainCalories + " calories per day\n"
+                + "Bulking Calories: " + bulkCalories + " calories per day\n"
+                + "Cutting Calories: " + cutCalories + " calories per day";
+
+
+        showToast(resultMessage);
+
+        Intent intent = new Intent(MainActivity.this,ResultActivity.class);
         startActivity(intent);
     }
 
