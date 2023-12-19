@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
         showToast(resultMessage);
 
         Intent intent = new Intent(MainActivity.this,ResultActivity.class);
+        intent.putExtra("maintainCalories", maintainCalories);
+        intent.putExtra("bulkCalories", bulkCalories);
+        intent.putExtra("cutCalories", cutCalories);
         startActivity(intent);
     }
 
