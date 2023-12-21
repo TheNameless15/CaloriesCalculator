@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextAge, editTextWeight, editTextHeight;
     private RadioGroup radioGroupGender, radioGroupActivityLevel;
     private Button calculateButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 + "Cutting Calories: " + cutCalories + " calories per day";
 
 
-        showToast(resultMessage);
+        /*showToast(resultMessage);*/
 
         Intent intent = new Intent(MainActivity.this,ResultActivity.class);
         intent.putExtra("maintainCalories", maintainCalories);
@@ -116,4 +115,6 @@ public class MainActivity extends AppCompatActivity {
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
+
+
 }
