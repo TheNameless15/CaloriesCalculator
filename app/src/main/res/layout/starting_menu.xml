@@ -5,15 +5,166 @@
     android:layout_height="match_parent"
     tools:context=".StartMenu">
 
+    <!-- hoa quả 15 -->
+
+    <!-- calories-calculator 1 -->
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-15dp"
+        android:background="#359CF9" />
+
+    <ImageView
+
+        android:layout_width="106.81dp"
+        android:layout_height="94.2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="195dp"
+        android:alpha="0.6"
+        android:background="@drawable/nho" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="605dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quacam" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="155dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quadautay" />
+
+    <ImageView
+        android:layout_width="107.78dp"
+        android:layout_height="135.74dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="175dp"
+        android:alpha="0.6"
+        android:background="@drawable/quadua" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="45dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quadao" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quale" />
+    <ImageView
+        android:layout_width="126.34dp"
+        android:layout_height="85.24dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/cherry" />
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="405dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quasaurieng" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="505dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quatao" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="605dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/chuoi" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="605dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/thanglong" />
+
+    <ImageView
+        android:id="@+id/caloriesCalculator1"
+        android:layout_width="57dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/calories_calculator"/>
+
+    <!-- KCAL -->
+    <TextView
+        android:id="@+id/kcalText"
+        android:layout_width="38dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="403dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="KCAL"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <!-- Group 1 -->
+    <RelativeLayout
+        android:id="@+id/group1"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="412dp">
+
+        <!-- —Pngtree—burn fire_8639658 1 -->
+        <ImageView
+            android:id="@+id/burnFire"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lua"/>
+    </RelativeLayout>
+
+    <!-- ... (Continue defining other elements similarly) -->
+
+    <!-- Calories Calculator -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Calories Calculator"
         android:textSize="40dp"
+        android:textColor="#FFFFFF"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"/>
+        android:gravity="center"/>
 
+    <!-- Start -->
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
@@ -21,6 +172,6 @@
         android:text="Start"
         android:layout_below="@id/titleTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
+        android:layout_marginTop="20dp"
+        />
 </RelativeLayout>
