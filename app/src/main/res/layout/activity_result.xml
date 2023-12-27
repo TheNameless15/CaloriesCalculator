@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity">
+    tools:context=".ResultActivity"
+    android:background="@color/blue">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,16 +14,19 @@
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="*">
-            <TextView
+            android:stretchColumns="*"
+            android:layout_marginTop="250dp">
+
+<!--           <TextView
                 android:id="@+id/textViewGoalHeader"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Goal"
-                android:contentDescription="Goal Header"/>
 
+                android:text="Goal"
+                android:contentDescription="Goal Header"
+               />-->
             <!-- Table content will be dynamically added by ResultActivity.java -->
 
         </TableLayout>

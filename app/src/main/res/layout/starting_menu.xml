@@ -81,7 +81,7 @@
     <ImageView
         android:layout_width="87dp"
         android:layout_height="80.04dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="405dp"
         android:alpha="0.6"
 
@@ -89,28 +89,51 @@
     <ImageView
         android:layout_width="87dp"
         android:layout_height="80.04dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="505dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="405dp"
         android:alpha="0.6"
 
         android:background="@drawable/quatao" />
     <ImageView
-        android:layout_width="87dp"
+        android:layout_width="150dp"
         android:layout_height="80.04dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="300dp"
         android:layout_marginTop="605dp"
         android:alpha="0.6"
 
         android:background="@drawable/chuoi" />
     <ImageView
-        android:layout_width="87dp"
-        android:layout_height="80.04dp"
-        android:layout_marginLeft="200dp"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginTop="605dp"
         android:alpha="0.6"
 
         android:background="@drawable/thanglong" />
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80.04dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="505dp"
+        android:alpha="0.6"
 
+        android:background="@drawable/quale" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="505dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/quadao" />
+    <ImageView
+        android:layout_width="126.34dp"
+        android:layout_height="85.24dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="505dp"
+        android:alpha="0.6"
+
+        android:background="@drawable/cherry" />
     <ImageView
         android:id="@+id/caloriesCalculator1"
         android:layout_width="57dp"
@@ -118,7 +141,6 @@
         android:layout_marginLeft="163dp"
         android:layout_marginTop="396dp"
         android:background="@drawable/calories_calculator"/>
-
     <!-- KCAL -->
     <TextView
         android:id="@+id/kcalText"
@@ -165,7 +187,7 @@
         android:gravity="center"/>
 
     <!-- Start -->
-    <Button
+<!--    <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -173,5 +195,5 @@
         android:layout_below="@id/titleTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        />-->
 </RelativeLayout>

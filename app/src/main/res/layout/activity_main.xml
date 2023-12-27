@@ -32,11 +32,12 @@ android:layout_marginBottom="16dp">
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Age:"
+    android:text="Age"
     android:textColor="@android:color/white"
     android:layout_gravity="start"
     android:textSize="18sp"
-android:layout_weight="1"/>
+    android:layout_weight="1"
+    />
 
 <EditText
     android:id="@+id/editTextAge"
@@ -46,35 +47,29 @@ android:layout_weight="1"/>
     android:hint="Enter Age"
     android:inputType="number"
     android:textSize="18sp"
-android:background="@android:color/white"/>
+    android:background="@android:color/white"/>
 
 </LinearLayout>
 
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
-        <RadioGroup
-            android:id="@+id/radioGroupGender"
-            android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:text="Male" />
 
-            <RadioButton
-                android:id="@+id/radioButtonMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Male" />
-
-            <RadioButton
-                android:layout_marginLeft="150dp"
-                android:id="@+id/radioButtonFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female" />
-        </RadioGroup>
-    </LinearLayout>
+        <RadioButton
+            android:layout_marginLeft="150dp"
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
     <!-- Height -->
 <LinearLayout
 android:layout_width="match_parent"
@@ -178,9 +173,9 @@ android:layout_marginBottom="16dp">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@color/white"
         android:text="Calculate Calories"
-        android:textColor="#4E342E"
+        android:textColor="#000000"
         android:textSize="18sp" />
 
     </LinearLayout>
