@@ -66,7 +66,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setText(text);
         textView.setGravity(Gravity.CENTER);
-
+        textView.setPadding(50, 50, 50, 50);
         if (isHeader) {
             textView.setBackgroundResource(R.drawable.cell_header_bg); // Customize header background
             textView.setTextColor(getResources().getColor(android.R.color.white));
